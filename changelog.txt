@@ -1,0 +1,132 @@
+*** Flexible Product Fields PRO for WooCommerce Changelog ***
+
+1.8.3 - 2021-07-15
+* Added support for WordPress 5.8
+* Added support for WooCommerce 5.5
+
+1.8.2 - 2021-05-20
+* Added support for WooCommerce 5.3
+
+1.8.1 - 2021-04-22
+* Added highlight for current date in datepicker
+* Added support for WooCommerce 5.2
+
+1.8.0 - 2021-03-30
+* Dropped support for Flexible Product Fields version lower than 1.7
+* Changed datepicker for Date field
+* Added ability to select multiple dates for Date field
+* Added ability to exclude dates for Date field
+* Added ability to exclude days of week for Date field
+* Added ability to exclude current date after specific time for Date field
+
+1.7.2 - 2021-03-11
+* Added support for WordPress 5.7
+* Added support for WooCommerce 5.1
+
+1.7.1 - 2021-02-11
+* Added support for WooCommerce 5.0
+
+1.7.0 - 2021-01-14
+* Added loading of plugin after action flexible_product_fields/init
+* Added admin notice in case of incompatibility
+* Added e-mail notification in case of incompatibility
+
+1.6.1 - 2020-12-16
+* Changed URLs for docs
+
+1.6.0 - 2020-12-01
+* Added support pricing to Multi-select field
+* Added support pricing to Number field
+* Added support pricing to Radio with images field
+* Added new type for "Assign this group to" option: Tag
+* Added support for WooCommerce 4.8
+* Added support for WordPress 5.6
+
+1.5.0 - 2020-10-15
+* Changed required PHP version to 7.0
+* Added support for WooCommerce 4.6
+
+1.4.9 - 2020-09-23
+* Added notice of planned change of required PHP version to 7.0
+
+1.4.8 - 2020-09-10
+* Added support for WooCommerce 4.5
+
+1.4.7 - 2020-06-01
+* Added support for WooCommerce 4.2
+
+1.4.6 - 2020-05-04
+* Fixed price calculation on conditional fields
+
+1.4.5 - 2020-03-19
+* Added support for WooCommerce 4.0
+
+1.4.4 - 2020-01-07
+* Added support for WooCommerce 3.9
+
+1.4.3 - 2019-11-04
+* Added support for WooCommerce 3.8 and WordPress 5.3
+
+1.4.2 - 2019-09-20
+* Added install/activation link in requirement message.
+
+1.4.1 - 2019-09-18
+* Fixed update error
+
+1.4.0 - 2019-09-18
+* Added support for prefixed libraries
+
+1.3.2 - 2019-08-12
+* Added support for WooCommerce 3.7
+
+1.3.0 - 2019-06-05
+* Removed subscription enforce
+
+1.2.1 - 2019-05-07
+* Fixed conditional logic on newer PHP versions.
+
+1.2.0 - 2019-04-26
+* Fixed script loading
+
+1.1.9 - 2019-04-24
+* Fixed release tag
+
+1.1.8 - 2019-04-24
+* Added support for WP Desk libraries
+* Fixed docs and support URL
+
+1.1.7 - 2019-04-05
+* Added support for WooCommerce 3.6
+* Fixed libraries versions
+
+1.1.6 - 2018-10-16
+* Added support for WooCommerce 3.5
+* Dropped support for WooCommerce below 3.0 (the plugin may still work with older versions but we do not declare official support)
+
+1.1.5 - 2018-08-20
+* Fixed price for percentage discount for simple products
+
+1.1.4 - 2018-08-08
+* Fixed fields ids when duplicating fields
+
+1.1.3 - 2018-05-23
+* Added support for WooCommerce 3.4
+
+1.1.2 - 2018-03-01
+* Fixed field default value for conditional logic
+* Fixed adding conditional logic with empty rule
+
+1.1.1 - 2018-01-25
+* Added support for WooCommerce 3.3
+
+1.1 - 2017-12-13
+* Added conditional logic for fields
+* Added new field type: Date
+* Added possibility to reduce the product price
+* Added field groups ordering
+
+1.0.1 - 2017-03-23
+* Fixed prices display for fields: input, textarea and checkbox
+
+1.0 - 2017-02-28
+* First Release!

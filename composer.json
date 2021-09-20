@@ -1,0 +1,10 @@
+{
+    "name": "taahirisaacs/flexible-product-fields-pro",
+    "description": "",
+    "keywords": ["wordpress", "plugin"],
+    "homepage": "https://github.com/taahirisaacs/flexible-product-fields-pro",
+    "type": "wordpress-plugin",
+    "require": {
+      "php": ">=7.1"
+    }
+}
