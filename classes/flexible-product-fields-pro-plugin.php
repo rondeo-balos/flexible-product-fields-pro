@@ -69,6 +69,7 @@ class Flexible_Product_Fields_PRO_Plugin extends \FPFProVendor\WPDesk\PluginBuil
 		$duplicate     = new FPF_PRO_Duplicate( $this );
 		$duplicate->hooks();
 		$this->plugin_pro->hooks();
+		$this->plugin_pro->init();
 	}
 
 	/**

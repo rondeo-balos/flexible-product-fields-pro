@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e
+class ComposerStaticInit70f5d910add847c88f9c1c707716d035
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -132,10 +132,17 @@ class ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e
         'FPFProVendor\\WPDesk\\Codeception\\Command\\WooCommerceTestGenerator' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Codeception/Command/WooCommerceTestGenerator.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\CommandProvider' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/CommandProvider.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\BaseCommand' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/BaseCommand.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\Configuration' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/Configuration.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\CreateCodeceptionTests' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/CreateCodeceptionTests.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\LocalCodeceptionTrait' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/LocalCodeceptionTrait.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\PrepareCodeceptionDb' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/PrepareCodeceptionDb.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\PrepareLocalCodeceptionTests' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/PrepareLocalCodeceptionTests.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\PrepareParallelCodeceptionTests' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/PrepareParallelCodeceptionTests.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\PrepareWordpressForCodeception' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/PrepareWordpressForCodeception.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\RunCodeceptionTests' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/RunCodeceptionTests.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\RunLocalCodeceptionTests' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/RunLocalCodeceptionTests.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\SedTrait' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/SedTrait.php',
+        'FPFProVendor\\WPDesk\\Composer\\Codeception\\Commands\\SettingsException' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Commands/SettingsException.php',
         'FPFProVendor\\WPDesk\\Composer\\Codeception\\Plugin' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-codeception/src/WPDesk/Composer/Plugin.php',
         'FPFProVendor\\WPDesk\\Helper\\Debug\\LibraryDebug' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Debug/LibraryDebug.php',
         'FPFProVendor\\WPDesk\\Helper\\HelperRemoveInfo' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-helper/src/HelperRemoveNotice.php',
@@ -280,8 +287,50 @@ class ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/DummyTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\CheckboxType' => __DIR__ . '/../..' . '/src/Field/Type/CheckboxType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\DateType' => __DIR__ . '/../..' . '/src/Field/Type/DateType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\HeadingType' => __DIR__ . '/../..' . '/src/Field/Type/HeadingType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\MultiselectType' => __DIR__ . '/../..' . '/src/Field/Type/MultiselectType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\NumberType' => __DIR__ . '/../..' . '/src/Field/Type/NumberType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\RadioImagesType' => __DIR__ . '/../..' . '/src/Field/Type/RadioImagesType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\RadioType' => __DIR__ . '/../..' . '/src/Field/Type/RadioType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\SelectType' => __DIR__ . '/../..' . '/src/Field/Type/SelectType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\TextType' => __DIR__ . '/../..' . '/src/Field/Type/TextType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Type\\TextareaType' => __DIR__ . '/../..' . '/src/Field/Type/TextareaType.php',
+        'WPDesk\\FPF\\Pro\\Field\\Types' => __DIR__ . '/../..' . '/src/Field/Types.php',
         'WPDesk\\FPF\\Pro\\Plugin' => __DIR__ . '/../..' . '/src/Plugin.php',
         'WPDesk\\FPF\\Pro\\Plugin\\Compatibility' => __DIR__ . '/../..' . '/src/Plugin/Compatibility.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Form\\GroupSettingsForm' => __DIR__ . '/../..' . '/src/Settings/Form/GroupSettingsForm.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Forms' => __DIR__ . '/../..' . '/src/Settings/Forms.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\DateFormatOption' => __DIR__ . '/../..' . '/src/Settings/Option/DateFormatOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\DaysAfterOption' => __DIR__ . '/../..' . '/src/Settings/Option/DaysAfterOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\DaysBeforeOption' => __DIR__ . '/../..' . '/src/Settings/Option/DaysBeforeOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\ExcludedDatesOption' => __DIR__ . '/../..' . '/src/Settings/Option/ExcludedDatesOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\ExcludedWeekDaysOption' => __DIR__ . '/../..' . '/src/Settings/Option/ExcludedWeekDaysOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\FirstWeekDayOption' => __DIR__ . '/../..' . '/src/Settings/Option/FirstWeekDayOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\GroupAssignOption' => __DIR__ . '/../..' . '/src/Settings/Option/GroupAssignOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\GroupCategoriesOption' => __DIR__ . '/../..' . '/src/Settings/Option/GroupCategoriesOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\GroupOrderOption' => __DIR__ . '/../..' . '/src/Settings/Option/GroupOrderOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\GroupTagsOption' => __DIR__ . '/../..' . '/src/Settings/Option/GroupTagsOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\LogicEnabledOption' => __DIR__ . '/../..' . '/src/Settings/Option/LogicEnabledOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\LogicOperatorOption' => __DIR__ . '/../..' . '/src/Settings/Option/LogicOperatorOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\LogicRulesConditionOption' => __DIR__ . '/../..' . '/src/Settings/Option/LogicRulesConditionOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\LogicRulesFieldOption' => __DIR__ . '/../..' . '/src/Settings/Option/LogicRulesFieldOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\LogicRulesOption' => __DIR__ . '/../..' . '/src/Settings/Option/LogicRulesOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\LogicRulesValueOption' => __DIR__ . '/../..' . '/src/Settings/Option/LogicRulesValueOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\OptionsWithImageOption' => __DIR__ . '/../..' . '/src/Settings/Option/OptionsWithImageOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\PriceTypeOption' => __DIR__ . '/../..' . '/src/Settings/Option/PriceTypeOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\PriceValueOption' => __DIR__ . '/../..' . '/src/Settings/Option/PriceValueOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\PriceValuesOption' => __DIR__ . '/../..' . '/src/Settings/Option/PriceValuesOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\SelectedDatesLimitOption' => __DIR__ . '/../..' . '/src/Settings/Option/SelectedDatesLimitOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Option\\TodayMaxHourOption' => __DIR__ . '/../..' . '/src/Settings/Option/TodayMaxHourOption.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Route\\FieldsConditionRoute' => __DIR__ . '/../..' . '/src/Settings/Route/FieldsConditionRoute.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Route\\FieldsFieldRoute' => __DIR__ . '/../..' . '/src/Settings/Route/FieldsFieldRoute.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Route\\FieldsValueRoute' => __DIR__ . '/../..' . '/src/Settings/Route/FieldsValueRoute.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Route\\ProductsCatsRoute' => __DIR__ . '/../..' . '/src/Settings/Route/ProductsCatsRoute.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Route\\ProductsTagsRoute' => __DIR__ . '/../..' . '/src/Settings/Route/ProductsTagsRoute.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Routes' => __DIR__ . '/../..' . '/src/Settings/Routes.php',
+        'WPDesk\\FPF\\Pro\\Settings\\Validation\\Error\\InvalidHourFormatError' => __DIR__ . '/../..' . '/src/Settings/Validation/Error/InvalidHourFormatError.php',
         'WPDesk\\Helper\\HelperAsLibrary' => __DIR__ . '/..' . '/wpdesk/wp-wpdesk-helper-override/src/Helper/HelperAsLibrary.php',
         'WPDesk_Tracker_Data_Provider' => __DIR__ . '/..' . '/wpdesk/wp-wpdesk-helper-override/src/Interop/Tracker/class-wpdesk-tracker-data-provider.php',
         'WPDesk_Tracker_Factory' => __DIR__ . '/..' . '/wpdesk/wp-wpdesk-helper-override/src/Helper/TrackerFactory.php',
@@ -292,9 +341,9 @@ class ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit47ae0d7500991a7d65cca4aa2b46ab0e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit70f5d910add847c88f9c1c707716d035::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit70f5d910add847c88f9c1c707716d035::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit70f5d910add847c88f9c1c707716d035::$classMap;
 
         }, null, ClassLoader::class);
     }

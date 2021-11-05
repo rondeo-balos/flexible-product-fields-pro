@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Product Fields PRO\n"
-"POT-Creation-Date: 2021-03-30 12:10+0200\n"
-"PO-Revision-Date: 2021-03-30 12:22+0200\n"
+"POT-Creation-Date: 2021-10-13 15:40+0200\n"
+"PO-Revision-Date: 2021-10-13 16:04+0200\n"
 "Last-Translator: Mateusz Gbiorczyk <mateusz.gbiorczyk@wpdesk.net>\n"
 "Language-Team: Maciej Swoboda <support@wpdesk.pl>\n"
 "Language: pl_PL\n"
@@ -48,34 +48,38 @@ msgid "Duplicate"
 msgstr "Duplikuj"
 
 #: classes/class-flexible-product-fields-pro.php:152
+#: src/Settings/Option/GroupAssignOption.php:29
 msgid "Product"
 msgstr "Produkt"
 
 #: classes/class-flexible-product-fields-pro.php:153
+#: src/Settings/Option/GroupAssignOption.php:30
 msgid "Category"
 msgstr "Kategoria"
 
 #: classes/class-flexible-product-fields-pro.php:154
+#: src/Settings/Option/GroupAssignOption.php:31
 msgid "Tag"
 msgstr "Tag"
 
 #: classes/class-flexible-product-fields-pro.php:155
+#: src/Settings/Option/GroupAssignOption.php:32
 msgid "All products"
 msgstr "Wszystkie produkty"
 
-#: classes/flexible-product-fields-pro-plugin.php:95
+#: classes/flexible-product-fields-pro-plugin.php:96
 msgid "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday"
 msgstr "Niedziala,Poniedziałek,Wtorek,Środa,Czwartek,Piątek,Sobota"
 
-#: classes/flexible-product-fields-pro-plugin.php:96
+#: classes/flexible-product-fields-pro-plugin.php:97
 msgid "Sun,Mon,Tue,Wed,Thu,Fri,Sat"
 msgstr "Nie,Pon,Wt,Śr,Czw,Pt,Sob"
 
-#: classes/flexible-product-fields-pro-plugin.php:97
+#: classes/flexible-product-fields-pro-plugin.php:98
 msgid "Su,Mo,Tu,We,Th,Fr,Sa"
 msgstr "Nd,Pn,Wt,Śr,Cz,Pt,So"
 
-#: classes/flexible-product-fields-pro-plugin.php:98
+#: classes/flexible-product-fields-pro-plugin.php:99
 msgid ""
 "January,February,March,April,May,June,July,August,September,October,November,"
 "December"
@@ -83,32 +87,32 @@ msgstr ""
 "Styczeń,Luty,Marzec,Kwiecień,Maj,Czerwiec,Lipiec,Sierpień,Wrzesień,"
 "Październik,Listopad,Grudzień"
 
-#: classes/flexible-product-fields-pro-plugin.php:99
+#: classes/flexible-product-fields-pro-plugin.php:100
 msgid "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 msgstr "Sty,Lut,Mar,Kwi,Maj,Cze,Lip,Sie,Wrz,Paź,Lis,Gru"
 
-#: classes/flexible-product-fields-pro-plugin.php:100
-#: classes/flexible-product-fields-pro-plugin.php:138
+#: classes/flexible-product-fields-pro-plugin.php:101
+#: classes/flexible-product-fields-pro-plugin.php:139
 msgid "Today"
 msgstr "Dzisiaj"
 
-#: classes/flexible-product-fields-pro-plugin.php:101
+#: classes/flexible-product-fields-pro-plugin.php:102
 msgid "Clear"
 msgstr "Wyczyść"
 
-#: classes/flexible-product-fields-pro-plugin.php:137
+#: classes/flexible-product-fields-pro-plugin.php:138
 msgid "Close"
 msgstr "Zamknij"
 
-#: classes/flexible-product-fields-pro-plugin.php:141
+#: classes/flexible-product-fields-pro-plugin.php:142
 msgid "Next"
 msgstr "Następny"
 
-#: classes/flexible-product-fields-pro-plugin.php:142
+#: classes/flexible-product-fields-pro-plugin.php:143
 msgid "Previous"
 msgstr "Poprzedni"
 
-#: classes/flexible-product-fields-pro-plugin.php:156
+#: classes/flexible-product-fields-pro-plugin.php:157
 #: vendor/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:214
 #: vendor/wpdesk/wp-wpdesk-helper/src/Page/SettingsPage.php:52
 #: vendor/wpdesk/wp-wpdesk-helper/src/Page/SettingsPage.php:53
@@ -117,19 +121,19 @@ msgstr "Poprzedni"
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: classes/flexible-product-fields-pro-plugin.php:157
+#: classes/flexible-product-fields-pro-plugin.php:158
 #: vendor/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:207
 #: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:194
 msgid "Docs"
 msgstr "Docs"
 
-#: classes/flexible-product-fields-pro-plugin.php:158
+#: classes/flexible-product-fields-pro-plugin.php:159
 #: vendor/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:201
 #: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:191
 msgid "Support"
 msgstr "Wsparcie"
 
-#: src/Plugin/Compatibility.php:164
+#: src/Plugin/Compatibility.php:170
 msgid ""
 "Flexible Product Fields and Flexible Product Fields PRO plugins are not "
 "compatible with each other!"
@@ -137,7 +141,7 @@ msgstr ""
 "Wtyczki Flexible Product Fields oraz Flexible Product Fields PRO są ze sobą "
 "niekompatybilne!"
 
-#: src/Plugin/Compatibility.php:184
+#: src/Plugin/Compatibility.php:190
 #, php-format
 msgid ""
 "Update both plugins to the latest versions for trouble-free use of all "
@@ -151,7 +155,7 @@ msgstr ""
 "ulepszane i tylko aktualizowanie obu wtyczek jednocześnie gwarantuje ich "
 "prawidłowe działanie."
 
-#: src/Plugin/Compatibility.php:197
+#: src/Plugin/Compatibility.php:203
 #, php-format
 msgid ""
 "Update both plugins to the latest versions to use all the features of the "
@@ -165,14 +169,218 @@ msgstr ""
 "ulepszane i tylko aktualizowanie obu wtyczek jednocześnie gwarantuje ich "
 "prawidłowe działanie."
 
-#: src/Plugin/Compatibility.php:231
+#: src/Plugin/Compatibility.php:237
 msgid "Flexible Product Fields PRO update needed!"
 msgstr "Flexible Product Fields PRO wymaga aktualizacji!"
 
-#: src/Plugin/Compatibility.php:239
+#: src/Plugin/Compatibility.php:245
 #, php-format
 msgid "To manage plugins on your site, visit the Plugins page: %s"
 msgstr "Aby zarządzać wtyczkami na swojej witrynie, odwiedź stronę Wtyczki: %s"
+
+#: src/Settings/Option/DateFormatOption.php:41
+msgid "Date format"
+msgstr "Format daty"
+
+#: src/Settings/Option/DateFormatOption.php:48
+msgid "Enter the WordPress date format."
+msgstr "Wprowadź format daty WordPress."
+
+#: src/Settings/Option/DaysAfterOption.php:40
+msgid "Days after"
+msgstr "Dni po"
+
+#: src/Settings/Option/DaysAfterOption.php:47
+msgid ""
+"Enter the range of days available in the calendar after the current date. "
+"Leave blank if the choice is not to be limited. The setting will not skip "
+"weekends and holidays."
+msgstr ""
+"Wprowadź zakres dni dostępnych w kalendarzu po bieżącej dacie. Pozostaw "
+"puste, jeśli wybór nie ma być ograniczany. To ustawienie nie pominie "
+"weekendów i świąt."
+
+#: src/Settings/Option/DaysBeforeOption.php:40
+msgid "Days before"
+msgstr "Dni przed"
+
+#: src/Settings/Option/DaysBeforeOption.php:47
+msgid ""
+"Enter the range of days available in the calendar before the current date. "
+"Leave blank if the choice is not to be limited. The setting will not skip "
+"weekends and holidays."
+msgstr ""
+"Wprowadź zakres dni dostępnych w kalendarzu przed bieżącą datą. Pozostaw "
+"puste, jeśli wybór nie ma być ograniczany. To ustawienie nie pominie "
+"weekendów i świąt."
+
+#: src/Settings/Option/ExcludedDatesOption.php:40
+msgid "Excluded dates"
+msgstr "Wykluczone daty"
+
+#: src/Settings/Option/ExcludedDatesOption.php:47
+msgid ""
+"Enter specific dates separating them with commas. Use the selected date "
+"format, e.g. dd.mm.yy."
+msgstr ""
+"Wpisz konkretne daty oddzielając je przecinkami. Użyj wybranego formatu "
+"daty, np. dd.mm.rr."
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:40
+msgid "Excluded days of week"
+msgstr "Wykluczone dni tygodnia"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:48
+#: src/Settings/Option/FirstWeekDayOption.php:59
+msgid "Sunday"
+msgstr "Niedziela"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:49
+#: src/Settings/Option/FirstWeekDayOption.php:60
+msgid "Monday"
+msgstr "Poniedziałek"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:50
+#: src/Settings/Option/FirstWeekDayOption.php:61
+msgid "Tuesday"
+msgstr "Wtorek"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:51
+#: src/Settings/Option/FirstWeekDayOption.php:62
+msgid "Wednesday"
+msgstr "Środa"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:52
+#: src/Settings/Option/FirstWeekDayOption.php:63
+msgid "Thursday"
+msgstr "Czwartek"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:53
+#: src/Settings/Option/FirstWeekDayOption.php:64
+msgid "Friday"
+msgstr "Piątek"
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:54
+#: src/Settings/Option/FirstWeekDayOption.php:65
+msgid "Saturday"
+msgstr "Sobota"
+
+#: src/Settings/Option/FirstWeekDayOption.php:42
+msgid "First day of week"
+msgstr "Pierwszy dzień tygodnia"
+
+#: src/Settings/Option/GroupCategoriesOption.php:27
+msgid "Select categories"
+msgstr "Wybierz kategorie"
+
+#: src/Settings/Option/GroupOrderOption.php:33
+msgid "Order Group"
+msgstr "Kolejność grupy"
+
+#: src/Settings/Option/GroupTagsOption.php:27
+msgid "Select tags"
+msgstr "Wybierz tagi"
+
+#: src/Settings/Option/LogicEnabledOption.php:40
+msgid "Conditional logic"
+msgstr "Logika warunkowa"
+
+#: src/Settings/Option/LogicEnabledOption.php:47
+msgid ""
+"Add at least one field containing values e.g. Checkbox. Then this field will "
+"show as an available rule for conditional logic."
+msgstr ""
+"Dodaj co najmniej jedno pole zawierające opcje np. Checkbox. Wtedy to pole "
+"pokaże się jako dostępny warunek dla logiki warunkowej."
+
+#: src/Settings/Option/LogicOperatorOption.php:41
+msgid "Show this field if"
+msgstr "Pokaż to pole jeśli"
+
+#: src/Settings/Option/LogicOperatorOption.php:67
+msgid "All rules match (and)"
+msgstr "Spełnione są wszystkie reguły (i)"
+
+#: src/Settings/Option/LogicOperatorOption.php:68
+msgid "One or more rules match (or)"
+msgstr "Spełniona jest jedna lub kilka reguł (lub)"
+
+#: src/Settings/Option/LogicRulesConditionOption.php:42
+msgid "Condition"
+msgstr "Warunek"
+
+#: src/Settings/Option/LogicRulesFieldOption.php:42
+#: src/Settings/Option/LogicRulesValueOption.php:42
+msgid "Field"
+msgstr "Pole"
+
+#: src/Settings/Option/LogicRulesOption.php:41
+#, php-format
+msgid "Rule #%s"
+msgstr "Reguła #%s"
+
+#: src/Settings/Option/PriceTypeOption.php:40
+msgid "Price type"
+msgstr "Typ ceny"
+
+#: src/Settings/Option/PriceTypeOption.php:48
+msgid "None"
+msgstr "Brak"
+
+#: src/Settings/Option/PriceTypeOption.php:49
+msgid "Fixed"
+msgstr "Kwota"
+
+#: src/Settings/Option/PriceTypeOption.php:50
+msgid "Percent"
+msgstr "Procent"
+
+#: src/Settings/Option/PriceValueOption.php:40
+msgid "Price"
+msgstr "Cena"
+
+#: src/Settings/Option/PriceValueOption.php:47
+msgid ""
+"It is possible to customize the labels that contain the brackets with the "
+"price."
+msgstr "Możliwe jest dostosowanie etykiet zawierających nawiasy z cenami."
+
+#: src/Settings/Option/PriceValuesOption.php:43
+#, php-format
+msgid "Pricing options for \"%s\""
+msgstr "Opcje ceny dla \"%s\""
+
+#: src/Settings/Option/SelectedDatesLimitOption.php:41
+msgid "Selected days limit"
+msgstr "Limit wybranych dni"
+
+#: src/Settings/Option/TodayMaxHourOption.php:41
+msgid "Time of day closing"
+msgstr "Godzina zamknięcia"
+
+#: src/Settings/Option/TodayMaxHourOption.php:48
+msgid "Enter the value in the HH:MM format."
+msgstr "Wprowadź wartość w formacie GG:MM."
+
+#: src/Settings/Route/FieldsConditionRoute.php:57
+msgid "is"
+msgstr "jest równy"
+
+#: src/Settings/Route/FieldsConditionRoute.php:58
+msgid "is not"
+msgstr "jest inny niż"
+
+#: src/Settings/Route/FieldsValueRoute.php:36
+msgid "checked"
+msgstr "zaznaczone"
+
+#: src/Settings/Route/FieldsValueRoute.php:37
+msgid "unchecked"
+msgstr "niezaznaczone"
+
+#: src/Settings/Validation/Error/InvalidHourFormatError.php:16
+msgid "Invalid hour format."
+msgstr "Nieprawidłowy format godziny."
 
 #: templates/notices/compatibility-error.php:19
 msgid "Learn more"
@@ -220,17 +428,14 @@ msgstr ""
 
 #: vendor/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:308
 #: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:277
-#, fuzzy, php-format
-#| msgid ""
-#| "The &#8220;%s&#8221; plugin requires at least %s version of %s to work "
-#| "correctly. Please update it"
+#, php-format
 msgid ""
 "The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work "
 "correctly. Please update it to its latest release."
 msgstr ""
-"Wtyczka &#8220;%s&#8221; wymaga przynajmniej wersji %s wtyczki %s do "
+"Wtyczka &#8220;%1$s&#8221; wymaga przynajmniej wersji %2$s wtyczki %3$s do "
 "poprawnego działania. Skontaktuj się proszę z administratorem serwera, aby "
-"zaktualizować wersję"
+"zaktualizować wersję."
 
 #: vendor/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:395
 #: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:349
@@ -431,8 +636,8 @@ msgstr "Biblioteka zgłoszonych błędów"
 msgid "WP Desk Helper Settings"
 msgstr "Ustawienia WP Desk Helper’a"
 
-#: vendor/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:66
-#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:62
+#: vendor/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:66
 #, php-format
 msgid ""
 "The PHP version your shop is currently using is deprecated. We highly advise "
@@ -442,8 +647,8 @@ msgstr ""
 "Wersja PHP, której obecnie używasz jest przestarzała. Rekomendujemy jej "
 "aktualizacje do wersji %s ponieważ niedługo przestanie być wspierana."
 
-#: vendor/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:75
-#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:65
+#: vendor/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:79
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:69
 #, php-format
 msgid ""
 "The WooCommerce version your shop is currently using is deprecated. We "
@@ -454,8 +659,8 @@ msgstr ""
 "Zdecydowanie zalecamy aktualizację do co najmniej %s, ponieważ wsparcie dla "
 "obecnej wersji wkrótce zostanie wycofana."
 
-#: vendor/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:84
-#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:68
+#: vendor/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:88
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:72
 #, php-format
 msgid ""
 "The WordPress version your shop is currently using is deprecated. We highly "
@@ -1049,10 +1254,6 @@ msgstr "https://www.wpdesk.pl/"
 #~ msgid "Assign this group to"
 #~ msgstr "Przypisz grupę do"
 
-#, fuzzy
-#~ msgid "Select products"
-#~ msgstr "Wszystkie produkty"
-
 #~ msgid "Value"
 #~ msgstr "Wartość"
 
@@ -1080,9 +1281,6 @@ msgstr "https://www.wpdesk.pl/"
 #~ msgid "Any class (must be set)"
 #~ msgstr "Dowolna klasa (musi być ustawiona)"
 
-#~ msgid "None"
-#~ msgstr "Brak"
-
 #~ msgid ""
 #~ "An Unexpected HTTP Error occurred during the API request.</p> <p><a href="
 #~ "\"?\" onclick=\"document.location.reload(); return false;\">Try again</a>"
@@ -1093,9 +1291,6 @@ msgstr "https://www.wpdesk.pl/"
 
 #~ msgid "An unknown error occurred"
 #~ msgstr "Wystąpił nieznany błąd"
-
-#~ msgid "Additional cost"
-#~ msgstr "Dodatkowy koszt"
 
 #~ msgid "Enter additional shipping cost based on the Value field."
 #~ msgstr "Wpisz dodatkowy koszt bazujący na polu Wartość."

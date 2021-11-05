@@ -1,5 +1,10 @@
 *** Flexible Product Fields PRO for WooCommerce Changelog ***
 
+2.0.0 - 2021-10-14
+* Major Update!
+* Dropped support for Flexible Product Fields version lower than 2.0
+* Added support for new admin page to manage FPF plugin settings
+
 1.8.3 - 2021-07-15
 * Added support for WordPress 5.8
 * Added support for WooCommerce 5.5

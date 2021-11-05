@@ -7,11 +7,11 @@
 
 namespace WPDesk\FPF\Pro;
 
-use FPFProVendor\WPDesk_Plugin_Info;
 use FPFProVendor\WPDesk\PluginBuilder\Plugin\AbstractPlugin;
 use FPFProVendor\WPDesk\PluginBuilder\Plugin\HookableCollection;
 use FPFProVendor\WPDesk\PluginBuilder\Plugin\HookableParent;
-use WPDesk\FPF\Pro\Plugin;
+use FPFProVendor\WPDesk_Plugin_Info;
+use WPDesk\FPF\Pro\Plugin\Compatibility;
 
 /**
  * Main plugin class. The most important flow decisions are made here.
@@ -38,7 +38,7 @@ class Plugin extends AbstractPlugin implements HookableCollection {
 	 * Plugin constructor.
 	 *
 	 * @param WPDesk_Plugin_Info                  $plugin_info Plugin info.
-	 * @param \Flexible_Product_Fields_PRO_Plugin $plugin_old Main plugin.
+	 * @param \Flexible_Product_Fields_PRO_Plugin $plugin_old  Main plugin.
 	 */
 	public function __construct( WPDesk_Plugin_Info $plugin_info, \Flexible_Product_Fields_PRO_Plugin $plugin_old ) {
 		parent::__construct( $plugin_info );
@@ -59,8 +59,8 @@ class Plugin extends AbstractPlugin implements HookableCollection {
 	public function load_action_init() {
 		add_action(
 			'flexible_product_fields/init',
-			function( $integrator ) {
-				$compatibility = new Plugin\Compatibility();
+			function ( $integrator ) {
+				$compatibility = new Compatibility();
 				$compatibility->set_plugin( $this );
 
 				if ( $compatibility->check_plugin_compatibility( $integrator ) ) {
@@ -73,12 +73,16 @@ class Plugin extends AbstractPlugin implements HookableCollection {
 	/**
 	 * Initializes plugin external state.
 	 *
-	 * The plugin internal state is initialized in the constructor and the plugin should be internally consistent after creation.
-	 * The external state includes hooks execution, communication with other plugins, integration with WC etc.
+	 * The plugin internal state is initialized in the constructor and the plugin should be internally consistent after
+	 * creation. The external state includes hooks execution, communication with other plugins, integration with WC
+	 * etc.
 	 *
 	 * @return void
 	 */
 	public function init() {
+		( new Field\Types() )->init();
+		( new Settings\Forms() )->init();
+		( new Settings\Routes() )->init();
 	}
 
 	/**

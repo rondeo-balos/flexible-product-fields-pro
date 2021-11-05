@@ -50,6 +50,7 @@ class Compatibility {
 
 	/**
 	 * Checks compatibility this plugin core to main plugin core.
+	 * In case of compatibility problems, displays Admin Notices.
 	 *
 	 * In case of compatibility problems, displays Admin Notices.
 	 *
@@ -58,14 +59,14 @@ class Compatibility {
 	 * @return bool Status if plugin is compatible.
 	 */
 	public function check_plugin_compatibility( $integrator ): bool {
-		if ( ( ! $integrator instanceof \WPDesk\FPF\Free\Integration\Integrator )
-			|| ! ( $version = $integrator->get_version_dev() ) ) {
+		$version = $integrator->get_version_dev();
+		if ( ( ! $integrator instanceof \WPDesk\FPF\Free\Integration\Integrator ) || ! $version ) {
 			return false;
 		}
 
 		if ( $this->check_compatibility_version_minor( $version ) ) {
 			return true;
-		} else if ( ! $this->check_compatibility_version_major( $version ) ) {
+		} elseif ( ! $this->check_compatibility_version_major( $version ) ) {
 			add_action( 'admin_notices', [ $this, 'show_error_about_compatibility' ] );
 			add_action( 'admin_enqueue_scripts', [ $this, 'load_styles_for_notice' ] );
 			$this->send_email_to_admin( $this->get_notice_error_title(), $this->get_notice_error_content() );
@@ -86,10 +87,15 @@ class Compatibility {
 	 * @return bool Status if plugin is compatible.
 	 */
 	private function check_compatibility_version_major( string $main_version ): bool {
-		$version_current = explode( '.', $this->version_dev )[0];
-		$version_main    = explode( '.', $main_version )[0];
+		$version_current_parts = explode( '.', $this->version_dev );
+		$version_main_parts    = explode( '.', $main_version );
+		$version_current_major = $version_current_parts[0];
+		$version_main_major    = $version_main_parts[0];
+		$version_current_minor = implode( '.', array_slice( $version_current_parts, 0, 2 ) );
+		$version_main_minor    = implode( '.', array_slice( $version_main_parts, 0, 2 ) );
 
-		return version_compare( $version_current, $version_main, '==' );
+		return ( version_compare( $version_current_major, $version_main_major, '==' )
+			&& version_compare( $version_current_minor, $version_main_minor, '<=' ) );
 	}
 
 	/**
@@ -100,12 +106,12 @@ class Compatibility {
 	 * @return bool Status if plugin is compatible.
 	 */
 	private function check_compatibility_version_minor( string $main_version ): bool {
-		$version_current_parts = array_slice( explode( '.', $this->version_dev ), 0, 2 );
-		$version_main_parts    = array_slice( explode( '.', $main_version ), 0, 2 );
-		$version_current       = implode( '.', $version_current_parts );
-		$version_main          = implode( '.', $version_main_parts );
+		$version_current_parts = explode( '.', $this->version_dev );
+		$version_main_parts    = explode( '.', $main_version );
+		$version_current_minor = implode( '.', array_slice( $version_current_parts, 0, 2 ) );
+		$version_main_minor    = implode( '.', array_slice( $version_main_parts, 0, 2 ) );
 
-		return version_compare( $version_current, $version_main, '==' );
+		return version_compare( $version_current_minor, $version_main_minor, '==' );
 	}
 
 	/**
@@ -180,7 +186,7 @@ class Compatibility {
 	 */
 	private function get_notice_warning_content(): string {
 		return sprintf(
-			/* translators: %s: break-line char */
+		/* translators: %s: break-line char */
 			__( 'Update both plugins to the latest versions for trouble-free use of all functionalities. Working with plugins now comes with limitations and risks. %sWe improve both versions on a regular basis. Updating the free and PRO versions at the same time guarantees their correct operation.', 'flexible-product-fields-pro' ),
 			'<br>'
 		);
@@ -193,7 +199,7 @@ class Compatibility {
 	 */
 	private function get_notice_error_content(): string {
 		return sprintf(
-			/* translators: %s: break-line char */
+		/* translators: %s: break-line char */
 			__( 'Update both plugins to the latest versions to use all the features of the PRO plugin. This plugin has now been deactivated as it is not compatible. %sWe improve both versions on a regular basis. Updating the free and PRO versions at the same time guarantees their correct operation.', 'flexible-product-fields-pro' ),
 			'<br>'
 		);
@@ -202,7 +208,7 @@ class Compatibility {
 	/**
 	 * Sends email to administrator when there is compatibility issue.
 	 *
-	 * @param string $notice_title Title of notice.
+	 * @param string $notice_title   Title of notice.
 	 * @param string $notice_content Content of notice.
 	 */
 	private function send_email_to_admin( string $notice_title, string $notice_content ) {
@@ -219,7 +225,7 @@ class Compatibility {
 	/**
 	 * Returns data of email when there is compatibility issue.
 	 *
-	 * @param string $notice_title Title of notice.
+	 * @param string $notice_title   Title of notice.
 	 * @param string $notice_content Content of notice.
 	 *
 	 * @return array Data of email (keys: to, subject, message).
@@ -235,7 +241,7 @@ class Compatibility {
 		$body[] = $notice_title;
 		$body[] = preg_replace( '/\<br([\s\/]+)?\>/', "\n", $notice_content );
 		$body[] = sprintf(
-			/* translators: %s: Plugins screen URL. */
+		/* translators: %s: Plugins screen URL. */
 			__( 'To manage plugins on your site, visit the Plugins page: %s', 'flexible-product-fields-pro' ),
 			"\n" . admin_url( 'plugins.php' )
 		);

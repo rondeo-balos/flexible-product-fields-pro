@@ -2,16 +2,16 @@
 # This file is distributed under the same license as the Flexible Product Fields Pro plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Product Fields Pro 1.8.3\n"
+"Project-Id-Version: Flexible Product Fields Pro 2.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-product-fields-pro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-07-15T17:08:22+00:00\n"
+"POT-Creation-Date: 2021-10-14T15:30:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.5.0\n"
+"X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: flexible-product-fields-pro\n"
 
 #. Plugin Name of the plugin
@@ -52,66 +52,258 @@ msgid "Duplicate"
 msgstr ""
 
 #: classes/class-flexible-product-fields-pro.php:153
+#: src/Settings/Option/GroupAssignOption.php:30
 msgid "Category"
 msgstr ""
 
 #: classes/class-flexible-product-fields-pro.php:154
+#: src/Settings/Option/GroupAssignOption.php:31
 msgid "Tag"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:95
+#: classes/flexible-product-fields-pro-plugin.php:96
 msgid "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:96
+#: classes/flexible-product-fields-pro-plugin.php:97
 msgid "Sun,Mon,Tue,Wed,Thu,Fri,Sat"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:97
+#: classes/flexible-product-fields-pro-plugin.php:98
 msgid "Su,Mo,Tu,We,Th,Fr,Sa"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:98
+#: classes/flexible-product-fields-pro-plugin.php:99
 msgid "January,February,March,April,May,June,July,August,September,October,November,December"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:99
+#: classes/flexible-product-fields-pro-plugin.php:100
 msgid "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:100
+#: classes/flexible-product-fields-pro-plugin.php:101
 msgid "Today"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:101
+#: classes/flexible-product-fields-pro-plugin.php:102
 msgid "Clear"
 msgstr ""
 
-#: classes/flexible-product-fields-pro-plugin.php:156
+#: classes/flexible-product-fields-pro-plugin.php:157
 msgid "Settings"
 msgstr ""
 
-#: src/Plugin/Compatibility.php:164
+#: src/Plugin/Compatibility.php:170
 msgid "Flexible Product Fields and Flexible Product Fields PRO plugins are not compatible with each other!"
 msgstr ""
 
 #. translators: %s: break-line char
-#: src/Plugin/Compatibility.php:184
+#: src/Plugin/Compatibility.php:190
 msgid "Update both plugins to the latest versions for trouble-free use of all functionalities. Working with plugins now comes with limitations and risks. %sWe improve both versions on a regular basis. Updating the free and PRO versions at the same time guarantees their correct operation."
 msgstr ""
 
 #. translators: %s: break-line char
-#: src/Plugin/Compatibility.php:197
+#: src/Plugin/Compatibility.php:203
 msgid "Update both plugins to the latest versions to use all the features of the PRO plugin. This plugin has now been deactivated as it is not compatible. %sWe improve both versions on a regular basis. Updating the free and PRO versions at the same time guarantees their correct operation."
 msgstr ""
 
-#: src/Plugin/Compatibility.php:231
+#: src/Plugin/Compatibility.php:237
 msgid "Flexible Product Fields PRO update needed!"
 msgstr ""
 
 #. translators: %s: Plugins screen URL.
-#: src/Plugin/Compatibility.php:239
+#: src/Plugin/Compatibility.php:245
 msgid "To manage plugins on your site, visit the Plugins page: %s"
+msgstr ""
+
+#: src/Settings/Option/DateFormatOption.php:41
+msgid "Date format"
+msgstr ""
+
+#: src/Settings/Option/DateFormatOption.php:48
+msgid "Enter the WordPress date format."
+msgstr ""
+
+#: src/Settings/Option/DaysAfterOption.php:40
+msgid "Days after"
+msgstr ""
+
+#: src/Settings/Option/DaysAfterOption.php:47
+msgid "Enter the range of days available in the calendar after the current date. Leave blank if the choice is not to be limited. The setting will not skip weekends and holidays."
+msgstr ""
+
+#: src/Settings/Option/DaysBeforeOption.php:40
+msgid "Days before"
+msgstr ""
+
+#: src/Settings/Option/DaysBeforeOption.php:47
+msgid "Enter the range of days available in the calendar before the current date. Leave blank if the choice is not to be limited. The setting will not skip weekends and holidays."
+msgstr ""
+
+#: src/Settings/Option/ExcludedDatesOption.php:40
+msgid "Excluded dates"
+msgstr ""
+
+#: src/Settings/Option/ExcludedDatesOption.php:47
+msgid "Enter specific dates separating them with commas. Use the selected date format, e.g. dd.mm.yy."
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:40
+msgid "Excluded days of week"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:48
+#: src/Settings/Option/FirstWeekDayOption.php:59
+msgid "Sunday"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:49
+#: src/Settings/Option/FirstWeekDayOption.php:60
+msgid "Monday"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:50
+#: src/Settings/Option/FirstWeekDayOption.php:61
+msgid "Tuesday"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:51
+#: src/Settings/Option/FirstWeekDayOption.php:62
+msgid "Wednesday"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:52
+#: src/Settings/Option/FirstWeekDayOption.php:63
+msgid "Thursday"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:53
+#: src/Settings/Option/FirstWeekDayOption.php:64
+msgid "Friday"
+msgstr ""
+
+#: src/Settings/Option/ExcludedWeekDaysOption.php:54
+#: src/Settings/Option/FirstWeekDayOption.php:65
+msgid "Saturday"
+msgstr ""
+
+#: src/Settings/Option/FirstWeekDayOption.php:42
+msgid "First day of week"
+msgstr ""
+
+#: src/Settings/Option/GroupAssignOption.php:29
+msgid "Product"
+msgstr ""
+
+#: src/Settings/Option/GroupAssignOption.php:32
+msgid "All products"
+msgstr ""
+
+#: src/Settings/Option/GroupCategoriesOption.php:27
+msgid "Select categories"
+msgstr ""
+
+#: src/Settings/Option/GroupOrderOption.php:33
+msgid "Order Group"
+msgstr ""
+
+#: src/Settings/Option/GroupTagsOption.php:27
+msgid "Select tags"
+msgstr ""
+
+#: src/Settings/Option/LogicEnabledOption.php:40
+msgid "Conditional logic"
+msgstr ""
+
+#: src/Settings/Option/LogicEnabledOption.php:47
+msgid "Add at least one field containing values e.g. Checkbox. Then this field will show as an available rule for conditional logic."
+msgstr ""
+
+#: src/Settings/Option/LogicOperatorOption.php:41
+msgid "Show this field if"
+msgstr ""
+
+#: src/Settings/Option/LogicOperatorOption.php:67
+msgid "All rules match (and)"
+msgstr ""
+
+#: src/Settings/Option/LogicOperatorOption.php:68
+msgid "One or more rules match (or)"
+msgstr ""
+
+#: src/Settings/Option/LogicRulesConditionOption.php:42
+msgid "Condition"
+msgstr ""
+
+#: src/Settings/Option/LogicRulesFieldOption.php:42
+#: src/Settings/Option/LogicRulesValueOption.php:42
+msgid "Field"
+msgstr ""
+
+#. translators: %s: rule index
+#: src/Settings/Option/LogicRulesOption.php:41
+msgid "Rule #%s"
+msgstr ""
+
+#: src/Settings/Option/PriceTypeOption.php:40
+msgid "Price type"
+msgstr ""
+
+#: src/Settings/Option/PriceTypeOption.php:48
+msgid "None"
+msgstr ""
+
+#: src/Settings/Option/PriceTypeOption.php:49
+msgid "Fixed"
+msgstr ""
+
+#: src/Settings/Option/PriceTypeOption.php:50
+msgid "Percent"
+msgstr ""
+
+#: src/Settings/Option/PriceValueOption.php:40
+msgid "Price"
+msgstr ""
+
+#: src/Settings/Option/PriceValueOption.php:47
+msgid "It is possible to customize the labels that contain the brackets with the price."
+msgstr ""
+
+#. translators: %s: option value
+#: src/Settings/Option/PriceValuesOption.php:43
+msgid "Pricing options for \"%s\""
+msgstr ""
+
+#: src/Settings/Option/SelectedDatesLimitOption.php:41
+msgid "Selected days limit"
+msgstr ""
+
+#: src/Settings/Option/TodayMaxHourOption.php:41
+msgid "Time of day closing"
+msgstr ""
+
+#: src/Settings/Option/TodayMaxHourOption.php:48
+msgid "Enter the value in the HH:MM format."
+msgstr ""
+
+#: src/Settings/Route/FieldsConditionRoute.php:57
+msgid "is"
+msgstr ""
+
+#: src/Settings/Route/FieldsConditionRoute.php:58
+msgid "is not"
+msgstr ""
+
+#: src/Settings/Route/FieldsValueRoute.php:36
+msgid "checked"
+msgstr ""
+
+#: src/Settings/Route/FieldsValueRoute.php:37
+msgid "unchecked"
+msgstr ""
+
+#: src/Settings/Validation/Error/InvalidHourFormatError.php:16
+msgid "Invalid hour format."
 msgstr ""
 
 #: templates/notices/compatibility-error.php:19
