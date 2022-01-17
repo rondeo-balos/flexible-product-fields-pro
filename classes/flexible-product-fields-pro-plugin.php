@@ -68,6 +68,7 @@ class Flexible_Product_Fields_PRO_Plugin extends \FPFProVendor\WPDesk\PluginBuil
 		$this->fpf_pro = new FPF_PRO( $this );
 		$duplicate     = new FPF_PRO_Duplicate( $this );
 		$duplicate->hooks();
+		$this->plugin_pro->init();
 		$this->plugin_pro->hooks();
 	}
 
@@ -81,12 +82,12 @@ class Flexible_Product_Fields_PRO_Plugin extends \FPFProVendor\WPDesk\PluginBuil
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 		if ( is_product() ) {
-			wp_enqueue_style( 'fpf-pro-front', trailingslashit( $this->get_plugin_assets_url() ) . '/css/new-front.css', [], $this->script_version );
+			wp_enqueue_style( 'fpf-pro-front', untrailingslashit( $this->get_plugin_assets_url() ) . '/css/new-front.css', [], $this->script_version );
 
 			add_action( 'wp_footer', [ $this, 'print_front_localize' ], 0 );
-			wp_enqueue_script( 'fpf-pro-front', trailingslashit( $this->get_plugin_assets_url() ) . '/js/new-front.js', [], $this->script_version, true );
+			wp_enqueue_script( 'fpf-pro-front', untrailingslashit( $this->get_plugin_assets_url() ) . '/js/new-front.js', [], $this->script_version, true );
 
-			wp_enqueue_script( 'flexible_product_fields_front_js', trailingslashit( $this->get_plugin_assets_url() ) . '/js/front.js', array( 'jquery' ), $this->script_version );
+			wp_enqueue_script( 'flexible_product_fields_front_js', untrailingslashit( $this->get_plugin_assets_url() ) . '/js/front.js', array( 'jquery' ), $this->script_version );
 		}
 	}
 

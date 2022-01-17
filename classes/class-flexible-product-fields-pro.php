@@ -108,7 +108,7 @@ class FPF_PRO {
 	 * @param $b WP_Post
 	 */
 	public function sort_groups_posts_cmp( $a, $b ) {
-		return $a->menu_order > $b->menu_order;
+		return (int) ( $a->menu_order > $b->menu_order );
 	}
 
 	public function flexible_product_fields_sort_groups_posts( $posts ) {
@@ -125,8 +125,13 @@ class FPF_PRO {
 			if ( $field_type['value'] == 'text'
 			     || $field_type['value'] == 'textarea'
 			     || $field_type['value'] == 'number'
+			     || $field_type['value'] == 'email'
+			     || $field_type['value'] == 'url'
 			     || $field_type['value'] == 'checkbox'
 			     || $field_type['value'] == 'fpfdate'
+			     || $field_type['value'] == 'time'
+			     || $field_type['value'] == 'file'
+			     || $field_type['value'] == 'color'
 			) {
 				$field_types[ $key ]['has_price'] = true;
 				$field_types[ $key ]['price_not_available'] = false;
@@ -135,6 +140,8 @@ class FPF_PRO {
 			     || $field_type['value'] == 'multiselect'
 			     || $field_type['value'] == 'radio'
 			     || $field_type['value'] == 'radio-images'
+			     || $field_type['value'] == 'radio-colors'
+			     || $field_type['value'] == 'multi-checkbox'
 			) {
 				$field_types[ $key ]['has_price_in_options'] = true;
 				$field_types[ $key ]['price_not_available_in_options'] = false;

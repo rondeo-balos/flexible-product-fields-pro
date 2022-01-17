@@ -3,15 +3,15 @@
 	Plugin Name: Flexible Product Fields Pro
 	Plugin URI: https://www.wpdesk.net/products/flexible-product-fields-pro-woocommerce/
 	Description: Allow customers to customize WooCommerce products before adding them to cart. Add fields: text, dropdown, checkbox, radio and assign fixed or percentage prices.
-	Version: 1.8.3
+	Version: 2.1.0
 	Author: WP Desk
 	Author URI: https://www.wpdesk.net/
 	Text Domain: flexible-product-fields-pro
 	Domain Path: /lang/
 	Requires at least: 5.2
-	Tested up to: 5.8
-	WC requires at least: 5.2
-	WC tested up to: 5.5
+	Tested up to: 5.9
+	WC requires at least: 5.7
+	WC tested up to: 6.0
 	Requires PHP: 7.0
 
 	Copyright 2017 WP Desk Ltd.
@@ -38,14 +38,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /* THIS VARIABLE CAN BE CHANGED AUTOMATICALLY */
-$plugin_version = '1.8.3';
+$plugin_version = '2.1.0';
 
 /*
  * Compatible version with base version of FPF plugin:
  * - older major version: no compatibility (disables plugin)
  * - older minor version: compatibility problems (displays notice)
  */
-$plugin_version_dev = '1.0';
+$plugin_version_dev = '1.1';
 
 define( 'FLEXIBLE_PRODUCT_FIELDS_PRO_VERSION', $plugin_version );
 define( 'FLEXIBLE_PRODUCT_FIELDS_PRO_VERSION_DEV', $plugin_version_dev );
@@ -57,22 +57,22 @@ $product_id         = 'Flexible Product Fields PRO';
 $plugin_file        = __FILE__;
 $plugin_dir         = dirname( __FILE__ );
 
-$requirements = array(
+$requirements = [
 	'php'          => '7.0',
 	'wp'           => '4.9',
-	'plugins'      => array(
-		array(
+	'plugins'      => [
+		[
 			'name'      => 'woocommerce/woocommerce.php',
 			'nice_name' => 'WooCommerce',
-		),
-	),
-	'repo_plugins' => array(
-		array(
+		],
+	],
+	'repo_plugins' => [
+		[
 			'name'      => 'flexible-product-fields/flexible-product-fields.php',
 			'nice_name' => 'Flexible Product Fields',
 			'version'   => '1.2.2',
-		),
-	),
-);
+		],
+	],
+];
 
 require __DIR__ . '/vendor_prefixed/wpdesk/wp-plugin-flow/src/plugin-init-php52.php';
